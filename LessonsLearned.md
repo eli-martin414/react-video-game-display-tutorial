@@ -5,10 +5,12 @@ Lessons learned while working on the course:
     - Can use self-closing tags like ```<Messsage />``` if we want an empty element instead of ```<Message></Message>```
   - React: "a JavaScript library for building dynamic and interactive UI" or "a front-end framework that has gradually become the go-to framework for modern web dev within the JS community"
     - It lets us build a single-page application (SPA); that is, it loads a single HTML document on the first request, and then updates any specific portion, content, or body that needs it using JavaScript. This is known as client-side routing because the client doesn't have to reload the full webpage to get a new page each time a user makes a new request; instead, React intercepts the request and only fetches and changes the sections that need changing without having to trigger a full page reload. React relies on a virtual DOM (Document Object Model). The virtual DOM is immediately reloaded to reflect any changes, and react-dom then compares it to the actual DOM to find the least expensive way to patch the changes.
+    - If we want to create a mobile page instead, that we simply use react-native instead of react-dom. This makes react platform-agnostic.
     - We do this through small, efficient "components" which React uses to efficiently create and update the DOM. Components help us write reusable, modular, and better-organized code. They're a bit like building blocks, and can be thought of as a tree, with the root being the whole app (App), and each child being smaller parts that build upon each other.
     - React components are often written in TypeScript, and given the file extension .jsx
       - They are often written as functions, but can also be written as classes.
       - They are used like regular JSX (which looks like regular HTML), with opening and closing tags
+      - StrictMode is a non-visual, built-in React component that identifies potential problems (like security flaws) - we can see it in main.tsx
 - Vite: a frontend dev tool that comes with a dev server and is used for modern web applications
   - It has hot module replacement (HMR) which adds, updates, or removes modules while an application runs without reloading the entire page, making the dev workflow faster.
 - React project structure:
