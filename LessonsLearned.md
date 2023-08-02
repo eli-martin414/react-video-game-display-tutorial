@@ -11,6 +11,8 @@ Lessons learned while working on the course:
       - They are often written as functions, but can also be written as classes.
       - They are used like regular JSX (which looks like regular HTML), with opening and closing tags
       - StrictMode is a non-visual, built-in React component that identifies potential problems (like security flaws) - we can see it in main.tsx
+    - React is a library; it is a tool that provides specific functionality. There are also frameworks, like Angular, which are a set of tools and guidelines for building apps.
+      - React only helps you with UI. You might need other tools for things like routing, HTTP, managing app state, internationalization, form validation, and animations.
 - Vite: a frontend dev tool that comes with a dev server and is used for modern web applications
   - It has hot module replacement (HMR) which adds, updates, or removes modules while an application runs without reloading the entire page, making the dev workflow faster.
 - React project structure:
