@@ -1,6 +1,6 @@
 function ListGroup() {
   let items = ["NYC", "San Fran", "Tokyo", "Paris", "London"];
-  items = [];
+  //items = [];
 
   // const message = items.length === 0 ? <p>NO item found</p> : null;
   // same result as using function below, just put {message} in JSX where we want it
@@ -10,18 +10,11 @@ function ListGroup() {
     return items.length === 0 ? <p>NO item found</p> : null;
   };
 
-  if (items.length === 0)
-    return (
-      <>
-        <h1>List</h1>
-        <p>No item found.</p>
-      </>
-    );
-
   return (
     <>
       <h1>List</h1>
-      {getMessage()}
+      {items.length === 0 && <p>No item found.</p>}
+      {/*getMessage() produces same as above line*/}
       <ul className="list-group">
         {items.map((item) => (
           <li key={item}>{item}</li>
