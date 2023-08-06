@@ -28,6 +28,8 @@ Lessons learned while working on the course:
       - dependencies are libraries the app itself depends on
       - devDependencies are used only for development, and are not shipped with the app
     - contains tsconfig.json, which has settings that tell the compiler how to compile our file to javascript
+  - for conditional render, see 37:00 or see Conditional Rendering commit in ListGroup.tsx
+  - true && an_item will return an_item (ex. true && "Hello" will return "Hello")
 - shortcuts for VS Code
   - Ctl + Shift + P = Command Palette
   - Ctl + P = search for files
